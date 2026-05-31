@@ -39,7 +39,7 @@ form.addEventListener("submit", function(e) {
         <p><strong>Email:</strong> ${email}</p>
     `;
 
-    output.prepend(entryBaru); // Data terbaru muncul di atas
+    output.prepend(entryBaru); 
 
     alert("Data berhasil dikirim!");
 });
