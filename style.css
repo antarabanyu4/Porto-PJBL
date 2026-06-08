@@ -82,6 +82,22 @@ nav ul li a:hover{
     transform: translateY(-5px);
 }
 
+.tombol .instagram button{
+    background: white;
+}
+
+.tombol .instagram button:hover{
+    background: white;
+}
+
+.tombol .tiktok button{
+    background: white;
+}
+
+.tombol .tiktok button:hover{
+    background: white;
+}
+
 .tombol button a{
     text-decoration: none;
     color: #2980b9;

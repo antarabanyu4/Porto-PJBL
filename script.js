@@ -20,9 +20,8 @@ if (!form) {
             const alamat = document.querySelector("textarea")?.value || "";
             const tanggal = document.querySelector('input[type="date"]')?.value || "";
 
-            const numberInputs = document.querySelectorAll('input[type="number"]');
-            const nomor = (numberInputs[0] && numberInputs[0].value) || "";
-            const umur = (numberInputs[1] && numberInputs[1].value) || "";
+            const telInputs = document.querySelectorAll('input[type="tel"]');
+            const nomor = (telInputs[0] && telInputs[0].value) || "";
 
             const email = document.querySelector('input[type="email"]')?.value || "";
             const password = document.querySelector('input[type="password"]')?.value || "";
@@ -65,7 +64,6 @@ if (!form) {
                 <p><strong>Password:</strong> ${password ? "******" : "Tidak diisi"}</p>
                 <p><strong>Jenis Kelamin:</strong> ${jenisKelamin}</p>
                 <p><strong>Hobi:</strong> ${hobi}</p>
-                <p><strong>Umur:</strong> ${umur}</p>
             `;
 
             if (output) output.prepend(entryBaru);
