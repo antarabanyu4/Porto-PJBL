@@ -14,12 +14,12 @@
                 <ul>
                     <li><a href="#Beranda">Beranda</a></li>
                     <li><a href="#TentangSaya">Tentang Saya</a></li>
-                    <li><a href="#Form">Form</a></li>
+                    <li><a href="#form">Form</a></li>
                 </ul>
             </nav>
         </header>
-        
-        <div class="Beranda">
+
+        <div class="Beranda" id="Beranda">
             <div class="text">
                 <h1>Halo <br> Saya Antara Banyu</h1>
                 <p>Selamat datang di portofolio saya!</p>
@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <div class="TentangSaya">
+    <div class="TentangSaya" id="TentangSaya">
         <h1>Tentang Saya</h1>
 
         <section class="asal">
@@ -53,79 +53,67 @@
     </div>
 
     <div class="project">
-    <h1>Project Saya</h1>
+        <h1>Project Saya</h1>
 
-    <div class="project-container">
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/konversisuhu.png" alt="Project 1">
+                <h3>Konversi Suhu</h3>
+                <p>Aplikasi konversi suhu sederhana menggunakan python dengan library Custom Tkinter.</p>
+                <button>Lihat Project</button>
+            </div>
 
-        <div class="project-card">
-            <img src="images/konversisuhu.png" alt="Project 1">
-            <h3>Konversi Suhu</h3>
-            <p>Aplikasi konversi suhu sederhana menggunakan python dengan library Custom Tkinter.</p>
-            <button>Lihat Project</button>
+            <div class="project-card">
+                <img src="images/menghitung.png" alt="Project 2">
+                <h3>Menghitung Bangun Datar</h3>
+                <p>Website menghitung luas dan keliling bangun datar menggunakan streamlit.</p>
+                <button>Lihat Project</button>
+            </div>
+
+            <div class="project-card">
+                <img src="images/scratch.png" alt="Project 3">
+                <h3>Jump The Snake</h3>
+                <p>Membuat permainan sederhana dan mudah menggunakan scratch.</p>
+                <button>Lihat Project</button>
+            </div>
         </div>
-
-        <div class="project-card">
-            <img src="images/menghitung.png" alt="Project 2">
-            <h3>Menghitung Bangun Datar</h3>
-            <p>Website menghitung luas dan keliling bangun datar menggunakan streamlit.</p>
-            <button>Lihat Project</button>
-        </div>
-
-        <div class="project-card">
-            <img src="images/scratch.png" alt="Project 3">
-            <h3>Jump The Snake</h3>
-            <p>Membuat permainan sederhana dan mudah menggunakan scratch.</p>
-            <button>Lihat Project</button>
-        </div>
-
-        
     </div>
-</div>
 
-    <div class="form">
+    <div class="form" id="form">
         <h1>FORM DATA DIRI</h1>
     </div>
 
     <div class="data">
-          <form>
-
+        <form>
             <table>
-
                 <tr>
                     <td>Nama Lengkap</td>
                     <td><input type="text" required></td>
                 </tr>
-
                 <tr>
                     <td>Alamat</td>
                     <td><textarea required></textarea></td>
                 </tr>
-
                 <tr>
                     <td>Tempat Lahir</td>
                     <td><input type="text" required></td>
                 </tr>
-
                 <tr>
                     <td>Tanggal Lahir</td>
                     <td><input type="date" required></td>
                 </tr>
-
                 <tr>
                     <td>Nomor HP</td>
                     <td><input type="number" required></td>
                 </tr>
-
                 <tr>
                     <td>Email</td>
                     <td><input type="email" required></td>
                 </tr>
-
                 <tr>
                     <td>Password</td>
                     <td><input type="password" required></td>
                 </tr>
-
                 <tr>
                     <td>Jenis Kelamin</td>
                     <td>
@@ -133,7 +121,6 @@
                         <input type="radio" name="jk" required> Perempuan
                     </td>
                 </tr>
-
                 <tr>
                     <td>Agama</td>
                     <td>
@@ -146,45 +133,35 @@
                         </select>
                     </td>
                 </tr>
-
                 <tr>
                     <td>Hobi</td>
                     <td>
-                        <input type="checkbox" > Membaca
-                        <input type="checkbox" > Olahraga
-                        <input type="checkbox" > Gaming
-                        <input type="checkbox" > Memasak
-                        <input type="checkbox" > Traveling
+                        <input type="checkbox"> Membaca
+                        <input type="checkbox"> Olahraga
+                        <input type="checkbox"> Gaming
+                        <input type="checkbox"> Memasak
+                        <input type="checkbox"> Traveling
                     </td>
                 </tr>
-
                 <tr>
                     <td>Umur</td>
                     <td><input type="number" required></td>
                 </tr>
-
                 <tr>
                     <td colspan="2">
                         <button type="submit">Kirim</button>
                     </td>
                 </tr>
-
             </table>
-
         </form>
+    </div>
+
+    <section id="hasilData">
+        <h2>Data Yang Dikirim</h2>
+        <div id="output">
+            <p>Belum ada data yang dikirim.</p>
+        </div>
     </section>
-
-
-<section id="hasilData">
-
-    <h2>Data Yang Dikirim</h2>
-
-    <div id="output">
-        <p>Belum ada data yang dikirim.</p>
-    </div>
-
-    </div>
-</section>
 
     <footer>
         <p>Copyright &copy; 2026 Antara Banyu</p>
@@ -193,3 +170,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+       
