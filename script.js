@@ -25,6 +25,7 @@ if (!form) {
             const umur = (numberInputs[1] && numberInputs[1].value) || "";
 
             const email = document.querySelector('input[type="email"]')?.value || "";
+            const password = document.querySelector('input[type="password"]')?.value || "";
 
             const jenisInput = document.querySelector('input[type="radio"]:checked');
             let jenisKelamin = "Tidak diisi";
@@ -61,6 +62,7 @@ if (!form) {
                 <p><strong>Tanggal Lahir:</strong> ${tanggal}</p>
                 <p><strong>Nomor HP:</strong> ${nomor}</p>
                 <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Password:</strong> ${password ? "******" : "Tidak diisi"}</p>
                 <p><strong>Jenis Kelamin:</strong> ${jenisKelamin}</p>
                 <p><strong>Hobi:</strong> ${hobi}</p>
                 <p><strong>Umur:</strong> ${umur}</p>
